@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #e9ecef;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  padding: 130px 0;
+}
+
+main {
+  width: 40%;
+  min-width: 450px;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px 30px 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#new-task {
+  width: 100%;
+  font-size: 15px;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  box-sizing: border-box;
+  outline: none;
+  color: #8b8c89;
+}
+
+#new-task::placeholder {
+  color: #a5a58d;
+  font-style: italic;
+}
+
+#todo-list {
+  width: 100%;
+  min-height: 67px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-weight: 300;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e9ecef;
+}
+
+#todo-list li div {
+  display: flex;
+  align-items: center;
+}
+
+.todo-input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: inherit;
+  align-self: flex-start;
+}
+
+.fa-check {
+  display: none;
+  color: #38b000;
+}
+
+.todo-task.active .fa-check {
+  display: block;
+}
+
+.todo-task.active .fa-square {
+  display: none;
+}
+
+.todo-task.active .todo-input {
+  text-decoration: line-through;
+}
+
+button {
+  min-width: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+i {
+  font-size: 17px;
+  color: #a5a58d;
+}
+
+#clear-completed {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: #a5a58d;
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f5f3f4;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.move-task {
+  cursor: move;
+}
+
+.dragging {
+  border: 1px solid #a5a58d !important;
+}
