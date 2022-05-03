@@ -21,6 +21,7 @@ Build a Todo list using:
 - JavaScript (ES6)
 - Webpack
 - Linters (Lighthouse, Webhint, Stylelint, Eslint)
+- FontAwesome
 
 ## Live Demo
 
@@ -62,6 +63,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to code reviewers and to everyone who reviewed the project and made suggestions.
+- Icons are from [FontAwesome](https://fontawesome.com/)
 
 ## 📝 License
 
